@@ -5,7 +5,6 @@ import TopBackground from "../../components/TopBackground";
 import Trash from "../../assets/trash.svg";
 import { useNavigate } from "react-router-dom";
 
-
 import {
   Container,
   Title,
@@ -29,14 +28,15 @@ function ListUsers() {
   }, []);
 
   async function deleteUser(id) {
-   try {
-    await api.delete(`/usuarios/${id}`);
+    try {
+      await api.delete(`/usuarios/${id}`);
 
-    const updatedUsers = users.filter((user) => user.id !== id);
-    setUsers(updatedUsers);
-  } catch (error) {
-    console.error("Erro ao excluir usuário:", error); 
-  }}
+      const updatedUsers = users.filter((user) => user.id !== id);
+      setUsers(updatedUsers);
+    } catch (error) {
+      console.error("Erro ao excluir usuário:", error);
+    }
+  }
 
   return (
     <Container>
@@ -46,14 +46,17 @@ function ListUsers() {
       <ContainerUsers>
         {users.map((user) => (
           <CardUsers key={user.id}>
-            <AvatarUser src = {`https://i.pravatar.cc/150?u=${user.id}`} />  
+            <AvatarUser src={`https://i.pravatar.cc/150?u=${user.id}`} />
             <div>
               <h3>{user.name}</h3>
               <p>{user.age}</p>
               <p>{user.email}</p>
-              
             </div>
-            <TrashIcon src={Trash} alt="Excluir" onClick={() => deleteUser(user.id)} />
+            <TrashIcon
+              src={Trash}
+              alt="Excluir"
+              onClick={() => deleteUser(user.id)}
+            />
           </CardUsers>
         ))}
       </ContainerUsers>
