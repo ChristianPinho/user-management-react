@@ -1,18 +1,27 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-    background: linear-gradient(to right, #fe7e5d, #7f3841);
-    height: 30vh;
-    width: min(90%, 800px);
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: min(92%, 800px);
+  max-width: 800px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.04),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #172340, #243764, #141d36);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-`
+  img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+  }
+`;

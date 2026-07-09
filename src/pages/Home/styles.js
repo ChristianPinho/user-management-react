@@ -1,34 +1,51 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #181f36;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 126, 93, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(75, 94, 170, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #0f172a 0%, #161f38 45%, #111827 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  min-height: 100vh;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 20px;
 `;
+
+
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   width: 100%;
-  max-width: 500px;
+  max-width: 560px;
 `;
 
 export const Title = styled.h2`
   color: #fff;
-  text-align: center;
-  font-size: clamp(28px, 5vw, 38px);
+  font-size: clamp(34px, 5vw, 60px);
   font-weight: 700;
+  letter-spacing: -1.5px;
+  text-align: center;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 `;
 
 export const ContainerInputs = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
   width: 100%;
 
@@ -37,26 +54,50 @@ export const ContainerInputs = styled.div`
   }
 `;
 
-export const Input = styled.input`
-  border-radius: 10px;
-  border: 1px solid #d2dae2;
-  background-color: #fff;
-  padding: 12px 20px;
-  outline: none;
+export const ContainerInputSingle = styled.div`
   width: 100%;
-  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  div {
+    width: 75%;
+  }
+
+  @media (max-width: 600px) {
+    div {
+      width: 100%;
+    }
+  }
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 14px;
+  background: rgba(34, 44, 74, 0.9);
+  border: 1px solid #3b4670;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+  &::placeholder {
+    color: #97a2c7;
+  }
+
   &:focus {
-    border-color: #fe7e5d;
+    border-color: #ff7e5d;
+
+    box-shadow: 0 0 0 4px rgba(255, 126, 93, 0.15);
+
+    background: #263156;
   }
 `;
 
 export const InputLabel = styled.label`
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-
+  color: #f8fafc;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
   span {
-    color: #ef4f45;
-    font-weight: bold;
+    color: #ff7e5d;
   }
 `;

@@ -7,6 +7,7 @@ import {
   Container,
   Form,
   ContainerInputs,
+  ContainerInputSingle,
   Input,
   InputLabel,
 } from "./styles";
@@ -44,14 +45,14 @@ function Home() {
         <ContainerInputs>
           <div>
             <InputLabel>
-              Nome <span>*</span>
+              Nome <span> *</span>
             </InputLabel>
             <Input type="text" placeholder="Nome do usuário" ref={inputName} />
           </div>
 
           <div>
             <InputLabel>
-              Idade<span>*</span>
+              Idade<span> *</span>
             </InputLabel>
             <Input
               type="number"
@@ -61,16 +62,18 @@ function Home() {
           </div>
         </ContainerInputs>
 
-        <div style={{ width: "100%" }}>
-          <InputLabel>
-            E-mail<span>*</span>
-          </InputLabel>
-          <Input
-            type="email"
-            placeholder="E-mail do usuário"
-            ref={inputEmail}
-          />
-        </div>
+        <ContainerInputSingle>
+          <div>
+            <InputLabel>
+              E-mail<span> *</span>
+            </InputLabel>
+            <Input
+              type="email"
+              placeholder="E-mail do usuário"
+              ref={inputEmail}
+            />
+          </div>
+        </ContainerInputSingle>
 
         <Button type="button" onClick={registerNewUser} theme="primary">
           Cadastrar Usuário
