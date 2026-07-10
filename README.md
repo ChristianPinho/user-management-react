@@ -8,13 +8,13 @@ O projeto consiste em um sistema de gerenciamento de usuários, permitindo cadas
 
 ## 🖥️ Preview Desktop
 
-(colocar aqui o mockup dos monitores)
+![Desktop](./src/assets/mockupdesktop.png)
 
 ---
 
 ## 📱 Preview Mobile
 
-(colocar aqui o mockup dos smartphones)
+![Mobile](./src/assets/mockupcel.png)
 
 ---
 
@@ -118,6 +118,4 @@ Em breve será adicionado aqui o link para a API.
 
 Desenvolvido por **Christian Marcel de Pinho**
 
-LinkedIn
-
-GitHub
+LinkedIn: www.linkedin.com/in/christianpinho1994
