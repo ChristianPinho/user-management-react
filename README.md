@@ -1,116 +1,123 @@
-# Projeto Full Stack - Sistema de Cadastro de Usuários
+# 👥 User Management React
 
-Aplicação Full Stack desenvolvida durante minha jornada de estudos em Desenvolvimento Web, com o objetivo de colocar em prática conceitos de frontend, backend, banco de dados e comunicação entre aplicações.
+Aplicação desenvolvida durante os estudos de React no DevClub.
 
-O projeto foi desenvolvido utilizando React no frontend, Node.js no backend e MongoDB para armazenamento das informações.
+O projeto consiste em um sistema de gerenciamento de usuários, permitindo cadastrar, listar e excluir registros através de uma API desenvolvida em Node.js integrada ao MongoDB.
 
-## 🚀 Tecnologias utilizadas
+---
 
-### Frontend
+## 🖥️ Preview Desktop
 
-* React
-* JavaScript
-* Styled Components
-* React Router
-* Vite
+(colocar aqui o mockup dos monitores)
 
-### Backend
+---
 
-* Node.js
-* Express
-* Prisma
-* MongoDB
+## 📱 Preview Mobile
 
-### Ferramentas
+(colocar aqui o mockup dos smartphones)
 
-* Git
-* GitHub
-* VS Code
-
-## 📌 Sobre o projeto
-
-Este projeto foi desenvolvido para aplicar na prática os conceitos aprendidos durante os estudos de Desenvolvimento Web Full Stack.
-
-A aplicação conta com uma interface desenvolvida em React, uma API criada com Node.js e integração com banco de dados MongoDB utilizando Prisma para gerenciamento das informações.
-
-Durante o desenvolvimento foram aplicados conceitos como:
-
-* Criação de componentes reutilizáveis em React;
-* Organização de projetos frontend e backend;
-* Comunicação entre aplicações através de API;
-* Manipulação e armazenamento de dados;
-* Estruturação de rotas;
-* Integração com banco de dados.
+---
 
 ## ✨ Funcionalidades
 
-* Cadastro de usuários;
-* Validação e envio de informações através da API;
-* Armazenamento de dados no MongoDB;
-* Interface responsiva;
-* Componentização de elementos da aplicação.
+- Cadastro de usuários
+- Listagem de usuários
+- Exclusão de usuários
+- Navegação entre páginas utilizando React Router
+- Comunicação com API REST
+- Interface moderna e responsiva
+- Componentes reutilizáveis
 
-## 🎨 Preview do projeto
+---
 
-### Desktop
+## 🛠 Tecnologias utilizadas
 
-<div align="center">
-<img src="./src/assets/mockup-desktop.png" width="700px" />
-</div>
+### Frontend
 
-### Mobile
+- React
+- React Router DOM
+- Styled Components
+- Axios
+- Vite
 
-<div align="center">
-<img src="./src/assets/mockup-mobile.png" width="300px" />
-</div>
+### Backend
 
-## 🔄 Próximos passos
+- Node.js
+- Express
+- MongoDB
+- Prisma ORM
+- Cors
 
-Como evolução do projeto, os próximos objetivos são:
+---
 
-* Realizar o deploy do frontend;
-* Publicar a API backend em um servidor online;
-* Configurar um banco de dados MongoDB em ambiente de produção;
-* Disponibilizar a aplicação online para que usuários possam realizar cadastros e utilizar o sistema.
-
-## 💻 Como executar o projeto localmente
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/ChristianPinho/user-management-react.git
-```
-
-Acesse a pasta do projeto:
+## 📂 Estrutura
 
 ```bash
-cd user-management-react
+src/
+│
+├── assets/
+├── components/
+├── pages/
+├── routes/
+├── services/
+├── Styles/
+└── main.jsx
 ```
 
-Instale as dependências:
+---
+
+## 🚀 Como executar
+
+Clone o repositório
+
+```bash
+git clone
+```
+
+Instale as dependências
 
 ```bash
 npm install
 ```
 
-Execute o projeto:
+Execute
 
 ```bash
 npm run dev
 ```
 
-## 📚 Aprendizados
+A aplicação estará disponível em
 
-Este projeto representa uma evolução importante na minha jornada de desenvolvimento, saindo de aplicações utilizando apenas HTML, CSS e JavaScript, para uma aplicação Full Stack com frontend, backend e banco de dados integrados.
+```
+http://localhost:5173
+```
 
-O desenvolvimento deste projeto contribuiu para aprimorar meus conhecimentos em React, Node.js, APIs, banco de dados e organização de aplicações modernas.
+---
+
+## 🔗 Backend
+
+O backend desta aplicação está disponível em um repositório separado.
+
+Em breve será adicionado aqui o link para a API.
+
+---
+
+## 💡 Próximas melhorias
+
+- Deploy da aplicação
+- Deploy da API
+- Banco de dados em nuvem (MongoDB Atlas)
+- Validação dos formulários
+- Feedback visual para erros e sucesso
+- Paginação da lista de usuários
+- Busca por usuários
+
+---
 
 ## 👨‍💻 Autor
 
-**Christian Marcel de Pinho**
+Desenvolvido por **Christian Marcel de Pinho**
 
-GitHub:
-https://github.com/ChristianPinho
+LinkedIn
 
-LinkedIn:
-www.linkedin.com/in/christianpinho1994
+GitHub
