@@ -96,9 +96,9 @@ http://localhost:5173
 
 ## 🔗 Backend
 
-O backend desta aplicação está disponível em um repositório separado.
+A API utilizada nesta aplicação está disponível em:
 
-Em breve será adicionado aqui o link para a API.
+👉 https://github.com/ChristianPinho/user-management-api
 
 ---
 
